@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/scratch.css" />
+  <title>Scratch Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Hobbies</h1>
+  </header>
+
+  <main>
+
+    <audio id="background-music" autoplay loop>
+        <source src="assets\img\apple.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <button id="music-toggle" class="music-btn">Pause Music</button>
+
+    <ol class="hobby-list">
+        <li>
+            <div class="hobby">
+              <h2>Photography</h2>
+              <ul>
+                <li>I own a digital and film camera</li>
+                <li>Started in 8th Grade</li>
+                <li>Prefer taking landscapes</li>
+              </ul>
+              <div class="tableau-container">
+                <div class='tableauPlaceholder' id='viz1744676163575' style='position: relative'>
+                  <noscript>
+                    <a href='#'><img alt='Birthday ' src='https://public.tableau.com/static/images/9F/9FRWMZNRG/1_rss.png' style='border: none' /></a>
+                  </noscript>
+                  <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared&#47;9FRWMZNRG' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/9F/9FRWMZNRG/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                  </object>
+                </div>
+                <script type='text/javascript'>
+                  var divElement = document.getElementById('viz1744676163575');
+                  var vizElement = divElement.getElementsByTagName('object')[0];
+                  vizElement.style.width = '100%';
+                  vizElement.style.height = '600px';
+                  var scriptElement = document.createElement('script');
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+              </div>
+            </div>
+          </li>
+
+      <li>
+        <div class="hobby">
+          <h2>Skiing</h2>
+          <ul>
+            <li>First went when I was 8 years old</li>
+            <li>Got traumatized at 14 years old</li>
+            <li>Tried it again when I moved to Utah for college</li>
+            <li>
+              <a href="https://www.epicpass.com/">Epic Pass Website</a>
+            </li>
+          </ul>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fbqHK8i-HdA?si=d_WlsWCqNMnM5eBu" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="hobby">
+          <h2>Hiking</h2>
+          <ul>
+            <li>Started because the mountains are so close</li>
+            <li>I enjoy doing photography while hiking</li>
+            <li>I am really bad at it but still enjoy it</li>
+          </ul>
+          
+            <div class="image-container"> 
+            <img src="assets\img\moab.jpeg" alt="A Picture of Me at Arches National Park">
+            </div>
+
+        </div>
+      </li>
+    </ol>
+
+    <div class="link-container">
+      <a href="index.html">Go to Professional Page</a>
+    </div>
+
+    <div class="link-container">
+        <a href="webapp.html">Play My Game!</a>
+    </div>
+
+    
+      <script>
+        const music = document.getElementById('background-music');
+        const toggleBtn = document.getElementById('music-toggle');
+      
+        toggleBtn.addEventListener('click', () => {
+          if (music.paused) {
+            music.play();
+            toggleBtn.textContent = 'Pause Music';
+          } else {
+            music.pause();
+            toggleBtn.textContent = 'Play Music';
+          }
+        });
+      </script>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lauren Wright Oh Yeah Baby!</p>
+  </footer>
+
+</body>
+</html>
